@@ -224,6 +224,71 @@ export default function Index() {
           </div>
           {/* Save Money */}
         </section>
+        {/* Features that blows mind */}
+        <section className="bg-webo-blue py-20">
+          <div className="container mx-auto">
+            <h1 className="font-extrabold text-6xl">
+              Features that blows mind
+            </h1>
+            <p className="max-w-lg my-5">
+              We so opinion friends me message as delight. Whole front do of
+              plate heard oh ought. His defective nor convinced residence own.
+            </p>
+            <div className="grid grid-cols-3 gap-10">
+              <div className="bg-gray-50 rounded-2xl p-5 border-2 border-slate-200">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="45"
+                  viewBox="0 0 50 45"
+                  fill="none"
+                >
+                  <rect y="15" width="50" height="30" fill="#3734A9" />
+                  <rect width="39" height="10" fill="black" />
+                </svg>
+                <h1 className="text-2xl font-extrabold mt-5 mb-3">
+                  Really boy law county she unable her sister
+                </h1>
+                <p>
+                  We so opinion friends me message as delight. Whole front do of
+                  plate heard oh ought.
+                </p>
+              </div>
+              <div className="bg-gray-50 rounded-2xl p-5 border-2 border-slate-200">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="45"
+                  viewBox="0 0 50 45"
+                  fill="none"
+                >
+                  <rect y="15" width="50" height="30" fill="#FF7F5C" />
+                  <rect width="39" height="10" fill="black" />
+                </svg>
+                <h1 className="text-2xl font-extrabold mt-5 mb-3">
+                  Among sex are leave law built now
+                </h1>
+                <p>
+                  We so opinion friends me message as delight. Whole front do of
+                  plate heard oh ought.
+                </p>
+              </div>
+              <div className="grid gap-10">
+                <div className="bg-gray-50 rounded-2xl p-5 border-2 border-slate-200">
+                  <h1 className="text-2xl font-extrabold mt-5 mb-3">
+                    Merits behind on afraid or warmly
+                  </h1>
+                </div>
+                <div className="bg-gray-50 rounded-2xl p-5 border-2 border-slate-200">
+                  <h1 className="text-2xl font-extrabold mt-5 mb-3">
+                    Believing neglected so so allowance existence
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Features that blows mind */}
       </main>
       <footer></footer>
     </>
