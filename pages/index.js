@@ -236,7 +236,7 @@ export default function Index() {
             <h1 className="font-extrabold text-6xl">
               Features that blows mind
             </h1>
-            <p className="max-w-lg my-5">
+            <p className="max-w-prose my-5">
               We so opinion friends me message as delight. Whole front do of
               plate heard oh ought. His defective nor convinced residence own.
             </p>
@@ -298,7 +298,7 @@ export default function Index() {
         {/* Testimonials */}
         <section className="container mx-auto py-20">
           <h1 className="font-extrabold text-6xl">Testimonials</h1>
-          <p className="max-w-xl my-5">
+          <p className="max-w-prose my-5">
             We so opinion friends me message as delight. Whole front do of plate
             heard oh ought. His defective nor convinced residence own.
           </p>
@@ -490,8 +490,88 @@ export default function Index() {
           </div>
         </section>
         {/* FAQ */}
+        {/* Discover */}
+        <section className="container mx-auto py-20">
+          <div className="bg-webo-purple rounded-xl px-16 py-20 flex flex-col items-center">
+            <h1 className="text-white text-5xl font-extrabold text-center">
+              Discover a better way to
+              <br /> manage spendings
+            </h1>
+            <button className="bg-webo-red rounded-md py-4 px-8 my-10 text-white">
+              Get Started Now
+            </button>
+          </div>
+        </section>
+        {/* Discover */}
       </main>
-      <footer></footer>
+      <footer className="container mx-auto">
+        <div className="grid grid-cols-4 gap-8 mt-10 mb-20">
+          <section className="flex flex-col justify-between">
+            <h3 className="font-bold text-xl">AR Shakir</h3>
+            <p className="text-paragraph-gray">
+              Finance helps companies <br />
+              manage payments easily.
+            </p>
+            <span className="flex flex-row justify-between">
+              <a href="https://www.linkedin.com/">
+                <img
+                  src="/images/svg/social/linkedin.svg"
+                  alt="linkedin logo"
+                />
+              </a>
+              <a href="https://www.messenger.com/">
+                <img
+                  src="/images/svg/social/messenger.svg"
+                  alt="messenger logo"
+                />
+              </a>
+              <a href="https://twitter.com/">
+                <img src="/images/svg/social/twitter.svg" alt="twitter logo" />
+              </a>
+              <a href="https://twoo.com/">
+                <img src="/images/svg/social/twoo.svg" alt="twoo logo" />
+              </a>
+            </span>
+          </section>
+          <section className="flex flex-col justify-between">
+            <h3 className="font-bold text-xl">Company</h3>
+            <a>About Us</a>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>Pricing</a>
+          </section>
+          <section className="flex flex-col justify-between">
+            <h3 className="font-bold text-xl">Resources</h3>
+            <a>Proposal Template</a>
+            <a>Invoice Template</a>
+            <a>Tutorial</a>
+            <a>How to write a contract</a>
+          </section>
+          <section className="flex flex-col">
+            <h3 className="font-bold text-xl">Join Our Newsletter</h3>
+            <form className="flex">
+              <input
+                type="email"
+                placeholder="Your email address"
+                className="placeholder:text-slate-400 block bg-quote-gray border  focus:outline-none focus:border-slate-300 px-3 py-2"
+              />
+              <button
+                type="submit"
+                className="bg-webo-purple text-white px-5 py-2"
+              >
+                Subscribe
+              </button>
+            </form>
+            <p className="text-paragraph-gray my-4">
+              * Will send you weekly updates for your better finance management.
+            </p>
+          </section>
+        </div>
+        <hr />
+        <p className="text-center my-5">
+          Copyright @ AR Shakir 2022. All Rights Reserved.
+        </p>
+      </footer>
     </>
   );
 }
