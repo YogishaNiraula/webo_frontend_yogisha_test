@@ -5,7 +5,94 @@ import Image from "next/image";
 export default function Index() {
   return (
     <>
-      <header></header>
+      <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA]">
+        <div className="container mx-auto px-4 pt-16">
+          <nav>
+            <ul className="flex items-baseline justify-between">
+              <li>
+                <a className="text-2xl font-bold">AR Shakir</a>
+              </li>
+              <li>
+                <a className="text-xl">Product</a>
+              </li>
+              <li>
+                <a className="text-xl">Template</a>
+              </li>
+              <li>
+                <a className="text-xl">Blog</a>
+              </li>
+              <li>
+                <a className="text-xl">Pricing</a>
+              </li>
+              <li className="text-xl">Sign in</li>
+              <button className="bg-webo-purple text-white px-5 py-3">
+                Start Free
+              </button>
+            </ul>
+          </nav>
+          <div className="grid grid-cols-2 gap-10">
+            <div className="my-5 place-self-center">
+              <h1 className="text-6xl font-extrabold">
+                Managing freelance payments has never been easier
+              </h1>
+              <p className="text-paragraph-gray max-w-sm text-xl my-6">
+                Yet bed any for traveling assistance indulgence unpleasing. Not
+                thoughts all exercise blessing.
+              </p>
+              <div className="flex max-w-sm justify-between">
+                <button className="bg-webo-purple text-white rounded-full px-8 py-2">
+                  Get Started
+                </button>
+                <span className="flex items-center">
+                  <img src="/images/svg/play.svg" alt="play icon" />
+                  <a className="text-paragraph-gray ml-3">See How It Works</a>
+                </span>
+              </div>
+              <div className="flex items-baseline max-w-sm text-paragraph-gray my-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle cx="12" cy="12.0005" r="12" fill="#3734A9" />
+                  <path
+                    d="M8 12.0005L10.8 15.0005L16 9.00049"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <p className="ml-2 mr-6">Free Register</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle cx="12" cy="12.0005" r="12" fill="#3734A9" />
+                  <path
+                    d="M8 12.0005L10.8 15.0005L16 9.00049"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <p className="ml-2">Great Service</p>
+              </div>
+            </div>
+            <img
+              src="/images/main.png"
+              alt="main image"
+              className="justify-self-end"
+            />
+          </div>
+        </div>
+      </header>
       <main>
         {/* Companies Logo */}
         <section className="bg-webo-gray py-12">
