@@ -218,8 +218,14 @@ export default function Index() {
                 </figure>
               </div>
             </div>
-            <div className="bg-webo-blue rounded-md ">
-              <img src="/images/handwithcard.png" alt="hand with card" />
+            <div className="isolate">
+              <div className="bg-webo-blue rounded-md z-1 relative">
+                <img
+                  src="/images/handwithcard.png"
+                  alt="hand with card"
+                  className="z-2"
+                />
+              </div>
             </div>
           </div>
           {/* Save Money */}
@@ -302,7 +308,7 @@ export default function Index() {
         {/* Testimonials */}
         {/* Metric */}
         <section className="bg-webo-purple py-16 text-white">
-          <div className="container mx-auto grid grid-cols-4 gap-5">
+          <div className="container mx-auto grid grid-cols-4">
             <p className="mzx-w-xs tracking-wider align-top">
               We speak with
               <br /> our powerful
@@ -344,6 +350,75 @@ export default function Index() {
           </div>
         </section>
         {/* Metric */}
+        {/* Blog */}
+        <section className="container mx-auto py-20">
+          <h1 className="text-6xl font-extrabold">Recent Blogs</h1>
+          <article className="grid grid-cols-2 gap-4 place-content-between my-6">
+            <section className="justify-self-start place-self-center">
+              <header>
+                <h5 className="uppercase font-bold tracking-wider">
+                  Best Practices
+                </h5>
+                <h2 className="text-bold text-3xl my-3">
+                  In design active temper be uneasy.
+                  <br /> Thirty for remove plenty regard.
+                </h2>
+              </header>
+              <footer className="mt-10">
+                <span className="flex">
+                  Read More
+                  <img src="/images/svg/arrow-right.svg" alt="arrow right" />
+                </span>
+              </footer>
+            </section>
+            <img
+              src="/images/blogs/blog1.png"
+              alt="people"
+              className="justify-self-end"
+            />
+          </article>
+          <div className="grid grid-cols-3">
+            <article>
+              <header>
+                <h5 className="uppercase font-bold tracking-wider">
+                  Best Practices
+                </h5>
+                <h2 className="text-bold text-3xl my-3">
+                  Partiality on or
+                  <br /> continuing particular
+                  <br /> principles as.
+                </h2>
+              </header>
+              <img src="/images/blogs/blog2.png" alt="people" />
+            </article>
+            <article>
+              <header>
+                <h5 className="uppercase font-bold tracking-wider">
+                  Best Practices
+                </h5>
+                <h2 className="text-bold text-3xl my-3">
+                  Village did removed
+                  <br /> enjoyed explain
+                </h2>
+              </header>
+              <img src="/images/blogs/blog3.png" alt="people" />
+            </article>
+            <article>
+              <header>
+                <h5 className="uppercase font-bold tracking-wider">
+                  Best Practices
+                </h5>
+                <h2 className="text-bold text-3xl my-3">
+                  Wise busy past both <br />
+                  park when an ye no.
+                  <br /> Nay likely her length.
+                </h2>
+              </header>
+              <img src="/images/blogs/blog4.png" alt="people" />
+            </article>
+          </div>
+        </section>
+        {/* Blog */}
       </main>
       <footer></footer>
     </>
