@@ -12,6 +12,7 @@ module.exports = {
         "paragraph-gray": "#757095",
         "webo-blue": "#DBF1FA",
         "webo-purple": "#3734A9",
+        "webo-red": "#FF7F5C",
       },
     },
   },
