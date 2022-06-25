@@ -179,6 +179,50 @@ export default function Index() {
             </div>
           </div>
           {/* Track Pyaments */}
+          {/* Save Money */}
+          <div className="grid grid-cols-2 gap-10 place-content-between my-20">
+            <div className="max-w-2xl justify-self-start">
+              <h5 className="uppercase font-bold text-[#3734A9] mb-5">
+                Why Choose Us
+              </h5>
+              <h1 className="text-6xl font-extrabold">
+                Save money with proper transaction
+              </h1>
+              <p className="my-5 text-paragraph-gray">
+                We so opinion friends me message as delight. Whole front do of
+                plate heard oh ought. His defective nor convinced residence own.
+              </p>
+              <div className="bg-quote-gray p-8 rounded-2xl max-w-lg relative mt-10">
+                <svg
+                  className="absolute -top-4 left-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                >
+                  <circle cx="22" cy="22" r="22" fill="black" />
+                  <path
+                    d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
+                    fill="white"
+                  />
+                </svg>
+                <figure>
+                  <blockquote>
+                    Wise busy past both park when an ye no. Nay likely her
+                    length sooner thrown sex lively income. The expense windows.
+                  </blockquote>
+                  <figcaption className="mt-4">
+                    - Mike Taylor, Web Designer
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div className="bg-webo-blue rounded-md ">
+              <img src="/images/handwithcard.png" alt="hand with card" />
+            </div>
+          </div>
+          {/* Save Money */}
         </section>
       </main>
       <footer></footer>
