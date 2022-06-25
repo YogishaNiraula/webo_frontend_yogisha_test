@@ -65,9 +65,80 @@ export default function Index() {
           {/* Automated Tracking */}
           {/* Cards */}
           <div className="grid grid-cols-3 gap-10 my-20">
-            <div className="border-2 border-slate-300 rounded-2xl p-5">01</div>
-            <div className="border-2 border-slate-300 rounded-2xl p-5">01</div>
-            <div className="border-2 border-slate-300 rounded-2xl p-5">01</div>
+            <div className="border-2 border-slate-300 rounded-2xl p-5">
+              <h1 className="font-extrabold">01</h1>
+              <div className="flex justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="45"
+                  viewBox="0 0 50 45"
+                  fill="none"
+                >
+                  <rect y="15" width="50" height="30" fill="#3734A9" />
+                  <rect width="39" height="10" fill="black" />
+                </svg>
+              </div>
+              <div className="grid justify-items-center">
+                <h1 className="text-3xl font-extrabold max-w-xs text-center justify-self-center mt-5 mb-3">
+                  Connect wallets & companies
+                </h1>
+                <p className="max-w-xs text-paragraph-gray text-center">
+                  Indulgence way everything joy alteration boisterous the
+                  attachment. Party we years to order allow asked of.{" "}
+                </p>
+              </div>
+            </div>
+            <div className="border-2 border-slate-300 rounded-2xl p-5">
+              <h1 className="font-extrabold">02</h1>
+              <div className="flex justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="45"
+                  viewBox="0 0 50 45"
+                  fill="none"
+                >
+                  <rect y="15" width="50" height="30" fill="#FF7F5C" />
+                  <rect width="39" height="10" fill="black" />
+                </svg>
+              </div>
+              <div className="grid justify-items-center">
+                <h1 className="text-3xl font-extrabold max-w-xs text-center justify-self-center mt-5 mb-3">
+                  Review <br />
+                  transactions
+                </h1>
+                <p className="max-w-xs text-paragraph-gray text-center">
+                  Indulgence way everything joy alteration boisterous the
+                  attachment. Party we years to order allow asked of.
+                </p>
+              </div>
+            </div>
+            <div className="border-2 border-slate-300 rounded-2xl p-5">
+              <h1 className="font-extrabold">03</h1>
+              <div className="flex justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="45"
+                  viewBox="0 0 50 45"
+                  fill="none"
+                >
+                  <rect y="15" width="50" height="30" fill="#FDBC64" />
+                  <rect width="39" height="10" fill="black" />
+                </svg>
+              </div>
+              <div className="grid justify-items-center">
+                <h1 className="text-3xl font-extrabold max-w-xs text-center justify-self-center mt-5 mb-3">
+                  Get income
+                  <br /> insights
+                </h1>
+                <p className="max-w-xs text-paragraph-gray text-center">
+                  Indulgence way everything joy alteration boisterous the
+                  attachment. Party we years to order allow asked of.
+                </p>
+              </div>
+            </div>
           </div>
           {/* Cards */}
         </section>
