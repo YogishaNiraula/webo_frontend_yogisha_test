@@ -419,6 +419,77 @@ export default function Index() {
           </div>
         </section>
         {/* Blog */}
+        {/* FAQ */}
+        <section className="container mx-auto py-20">
+          <h1 className="text-6xl font-extrabold">
+            Frequently
+            <br /> asked questions
+          </h1>
+          <div className="grid grid-cols-3 gap-10 mt-12">
+            <div className="col-span-2 grid gap-y-4">
+              <details className="border-2 border-gray-300 rounded-md p-5">
+                <summary className="font-extrabold text-xl">
+                  The expense windows adapted sir. Wrong widen drawn.
+                </summary>
+                Offending belonging promotion provision an be oh consulted
+                ourselves it. Blessing welcomed ladyship she met humoured sir
+                breeding her.
+              </details>
+              <details className="border-2 border-gray-300 rounded-md p-5">
+                <summary className="font-extrabold text-xl">
+                  Six curiosity day assurance bed necessary?{" "}
+                </summary>
+                Offending belonging promotion provision an be oh consulted
+                ourselves it. Blessing welcomed ladyship she met humoured sir
+                breeding her.
+              </details>
+              <details className="border-2 border-gray-300 rounded-md p-5">
+                <summary className="font-extrabold text-xl">
+                  Produce say the ten moments parties?{" "}
+                </summary>
+                Offending belonging promotion provision an be oh consulted
+                ourselves it. Blessing welcomed ladyship she met humoured sir
+                breeding her.
+              </details>
+              <details className="border-2 border-gray-300 rounded-md p-5">
+                <summary className="font-extrabold text-xl">
+                  Simple innate summer fat appear basket his desire joy?{" "}
+                </summary>
+                Offending belonging promotion provision an be oh consulted
+                ourselves it. Blessing welcomed ladyship she met humoured sir
+                breeding her.
+              </details>
+              <details className="border-2 border-gray-300 rounded-md p-5">
+                <summary className="font-extrabold text-xl">
+                  Outward clothes promise at gravity do excited?{" "}
+                </summary>
+                Offending belonging promotion provision an be oh consulted
+                ourselves it. Blessing welcomed ladyship she met humoured sir
+                breeding her.
+              </details>
+            </div>
+            <div className="flex flex-col items-center border-2 border-gray-300 rounded-md px-5 py-8">
+              <div className="">
+                <img src="/images/svg/message.svg" alt="message icon" />
+              </div>
+              <div className="text-center my-6">
+                <h5 className="font-extrabold text-2xl">
+                  Do you have more questions?
+                </h5>
+                <p>
+                  End-to-end payments and financial management in a single
+                  solution. Meet the right platform to help realize.
+                </p>
+              </div>
+              <div className="flex items-stretch">
+                <button className="bg-webo-red text-white px-24 py-4 self-end">
+                  Shoot a Direct Mail
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* FAQ */}
       </main>
       <footer></footer>
     </>
