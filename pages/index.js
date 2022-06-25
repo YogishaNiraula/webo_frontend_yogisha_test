@@ -300,6 +300,50 @@ export default function Index() {
           {/* Slider */}
         </section>
         {/* Testimonials */}
+        {/* Metric */}
+        <section className="bg-webo-purple py-16 text-white">
+          <div className="container mx-auto grid grid-cols-4 gap-5">
+            <p className="mzx-w-xs tracking-wider align-top">
+              We speak with
+              <br /> our powerful
+              <br /> statistics
+            </p>
+            <div>
+              <h1 className="text-7xl font-extrabold">1M+</h1>
+              <label>
+                <span className="flex items-baseline">
+                  <img src="/images/svg/person.svg" alt="person" />
+                  <h3 className="text-xl font-normal tracking-wide ml-4">
+                    Active Users
+                  </h3>
+                </span>
+              </label>
+            </div>
+            <div>
+              <h1 className="text-7xl font-extrabold">30K+</h1>
+              <label>
+                <span className="flex items-baseline">
+                  <img src="/images/svg/star.svg" alt="star" />
+                  <h3 className="text-xl font-normal tracking-wide ml-4">
+                    5-Stars Reviews
+                  </h3>
+                </span>
+              </label>
+            </div>
+            <div>
+              <h1 className="text-7xl font-extrabold">$252M</h1>
+              <label>
+                <span className="flex items-baseline">
+                  <img src="/images/svg/star.svg" alt="star" />
+                  <h3 className="text-xl font-normal tracking-wide ml-4">
+                    Transactions
+                  </h3>
+                </span>
+              </label>
+            </div>
+          </div>
+        </section>
+        {/* Metric */}
       </main>
       <footer></footer>
     </>

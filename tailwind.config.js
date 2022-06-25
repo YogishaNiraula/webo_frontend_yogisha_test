@@ -11,6 +11,7 @@ module.exports = {
         "quote-gray": "rgba(196, 196, 196, 0.3)",
         "paragraph-gray": "#757095",
         "webo-blue": "#DBF1FA",
+        "webo-purple": "#3734A9",
       },
     },
   },
