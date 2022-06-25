@@ -64,7 +64,7 @@ export default function Index() {
           </div>
           {/* Automated Tracking */}
           {/* Cards */}
-          <div className="grid grid-cols-3 gap-10 my-20">
+          <div className="grid grid-cols-3 gap-16 my-20">
             <div className="border-2 border-slate-300 rounded-2xl p-5">
               <h1 className="font-extrabold">01</h1>
               <div className="flex justify-center">
@@ -89,7 +89,7 @@ export default function Index() {
                 </p>
               </div>
             </div>
-            <div className="border-2 border-slate-300 rounded-2xl p-5">
+            <div className="border-2 border-slate-300 rounded-2xl px-5 py-8">
               <h1 className="font-extrabold">02</h1>
               <div className="flex justify-center">
                 <svg
@@ -141,6 +141,44 @@ export default function Index() {
             </div>
           </div>
           {/* Cards */}
+          {/* Track Payments */}
+          <div className="md:grid grid-cols-2 gap-10 place-content-between">
+            <div>
+              <img src="/images/Card-bg.png" alt="card background" />
+            </div>
+            <div className="max-w-2xl justify-self-end">
+              <h5 className="uppercase font-bold text-[#3734A9] mb-5">
+                Why Choose Us
+              </h5>
+              <h1 className="text-6xl font-extrabold">
+                Track your payments
+                <br /> on the go with the
+                <br /> best way possible
+              </h1>
+              <p className="my-5 text-paragraph-gray">
+                Indulgence way everything joy alteration boisterous the
+                attachment. Party we years to order allow asked of.
+              </p>
+              <hr className="my-5" />
+              <div className="flex">
+                <img src="/images/svg/check.svg" alt="check" />
+                <p className="ml-4 text-paragraph-gray">
+                  Get Overview at a glance
+                </p>
+              </div>
+              <div className="flex my-4">
+                <img src="/images/svg/check.svg" alt="check" />
+                <p className="ml-4 text-paragraph-gray">
+                  Deposit funds easily, security
+                </p>
+              </div>
+              <div className="flex">
+                <img src="/images/svg/check.svg" alt="check" />
+                <p className="ml-4 text-paragraph-gray">Get Live Support</p>
+              </div>
+            </div>
+          </div>
+          {/* Track Pyaments */}
         </section>
       </main>
       <footer></footer>
