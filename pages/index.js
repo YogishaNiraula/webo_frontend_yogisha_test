@@ -1,7 +1,78 @@
+/* eslint-disable @next/next/no-img-element */
+// import Layout from "../components/layout";
+import Image from "next/image";
+
 export default function Index() {
   return (
     <>
-      <div className="text-red-500">Yogisha</div>
+      <header></header>
+      <main>
+        {/* Companies Logo */}
+        <section className="bg-webo-gray py-12">
+          <h2 className="text-center text-2xl mb-6">
+            Over 32k+ software businesses growing with AR Shakir.
+          </h2>
+          <div className="grid md:grid-cols-7 justify-items-center gap-4 container mx-auto">
+            <img src="/images/companies/OpenZeppelin.png" alt="OpenZeppelin" />
+            <img src="/images/companies/Oracle.png" alt="Oracle" />
+            <img src="/images/companies/Morpheus.png" alt="Morpheus" />
+            <img src="/images/companies/Samsung.png" alt="Samsung" />
+            <img src="/images/companies/Monday.png" alt="Monday" />
+            <img src="/images/companies/Segment.png" alt="Segment" />
+            <img src="/images/companies/Protonet.png" alt="Protonet" />
+          </div>
+        </section>
+        {/* Companies Logo */}
+        <section className="container mx-auto py-16">
+          {/* Automated Tracking */}
+          <div className="flex justify-between">
+            <div className="max-w-lg">
+              <h1 className="text-6xl font-extrabold">
+                Automated portfolio tracking
+              </h1>
+              <p className="font-medium my-5">
+                Yet bed any for travelling assistance indulgence unpleasing. Not
+                thoughts all exercise blessing.
+              </p>
+            </div>
+            <div className="bg-quote-gray p-9 rounded-2xl max-w-md relative">
+              <svg
+                className="absolute -top-4 left-5"
+                xmlns="http://www.w3.org/2000/svg"
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+                fill="none"
+              >
+                <circle cx="22" cy="22" r="22" fill="black" />
+                <path
+                  d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
+                  fill="white"
+                />
+              </svg>
+              <figure>
+                <blockquote>
+                  Wise busy past both park when an ye no. Nay likely her length
+                  sooner thrown sex lively income. The expense windows adapted
+                  sir. Wrong widen.
+                </blockquote>
+                <figcaption className="mt-4">
+                  - Mike Taylor, Web Designer
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          {/* Automated Tracking */}
+          {/* Cards */}
+          <div className="grid grid-cols-3 gap-10 my-20">
+            <div className="border-2 border-slate-300 rounded-2xl p-5">01</div>
+            <div className="border-2 border-slate-300 rounded-2xl p-5">01</div>
+            <div className="border-2 border-slate-300 rounded-2xl p-5">01</div>
+          </div>
+          {/* Cards */}
+        </section>
+      </main>
+      <footer></footer>
     </>
   );
 }
