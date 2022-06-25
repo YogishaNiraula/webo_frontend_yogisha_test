@@ -289,6 +289,17 @@ export default function Index() {
           </div>
         </section>
         {/* Features that blows mind */}
+        {/* Testimonials */}
+        <section className="container mx-auto py-20">
+          <h1 className="font-extrabold text-6xl">Testimonials</h1>
+          <p className="max-w-xl my-5">
+            We so opinion friends me message as delight. Whole front do of plate
+            heard oh ought. His defective nor convinced residence own.
+          </p>
+          {/* Slider */}
+          {/* Slider */}
+        </section>
+        {/* Testimonials */}
       </main>
       <footer></footer>
     </>
