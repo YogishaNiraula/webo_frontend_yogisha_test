@@ -19,7 +19,7 @@ export default function Index() {
                 <div className="relative group">
                   <button
                     type="button"
-                    className="inline-flex items-center text-base font-medium"
+                    className="flex items-center"
                     aria-expanded="false"
                   >
                     <span>Product</span>
@@ -66,7 +66,7 @@ export default function Index() {
                 <div className="relative group">
                   <button
                     type="button"
-                    className="inline-flex items-center text-base font-medium"
+                    className="flex items-center"
                     aria-expanded="false"
                   >
                     <span>Template</span>
@@ -105,20 +105,14 @@ export default function Index() {
                   </div>
                 </div>
 
-                <a href="#" className="text-base font-medium">
-                  Blog
-                </a>
-                <a href="#" className="text-base font-medium">
-                  Pricing
-                </a>
+                <a href="#">Blog</a>
+                <a href="#">Pricing</a>
               </nav>
               <div className="flex items-center justify-end flex-1">
-                <a href="#" className="text-base font-medium">
-                  Sign in
-                </a>
+                <a href="#">Sign in</a>
                 <a
                   href="#"
-                  className="ml-8 px-4 py-2 text-base font-medium text-white bg-webo-purple"
+                  className="ml-8 px-4 py-2 text-white bg-webo-purple"
                 >
                   Start Free
                 </a>
@@ -136,12 +130,16 @@ export default function Index() {
                 Yet bed any for traveling assistance indulgence unpleasing. Not
                 thoughts all exercise blessing.
               </p>
-              <div className="flex max-w-sm justify-between">
+              <div className="flex max-w-sm space-x-10">
                 <button className="bg-webo-purple text-white rounded-full px-8 py-2">
                   Get Started
                 </button>
                 <span className="flex items-center">
-                  <img src="/images/svg/play.svg" alt="play icon" />
+                  <img
+                    src="/images/svg/play.svg"
+                    alt="play icon"
+                    className="h-12 w-12"
+                  />
                   <a className="text-paragraph-gray ml-3">See How It Works</a>
                 </span>
               </div>
