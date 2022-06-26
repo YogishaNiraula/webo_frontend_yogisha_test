@@ -205,7 +205,7 @@ export default function Index() {
           </div>
         </section>
         {/* Companies Logo */}
-        <section className="container mx-auto py-16">
+        <section className="container mx-auto pt-16">
           {/* Automated Tracking */}
           <div className="flex justify-between">
             <div className="max-w-lg">
@@ -326,7 +326,11 @@ export default function Index() {
           {/* Track Payments */}
           <div className="md:grid grid-cols-2 gap-10 place-content-between">
             <div>
-              <img src="/images/Card-bg.png" alt="card background" />
+              <img
+                src="/images/Card-bg.png"
+                alt="card background"
+                className="max-h-full"
+              />
             </div>
             <div className="max-w-2xl justify-self-end">
               <h5 className="uppercase font-bold text-[#3734A9] mb-5">
@@ -362,7 +366,7 @@ export default function Index() {
           </div>
           {/* Track Pyaments */}
           {/* Save Money */}
-          <div className="grid grid-cols-2 gap-10 place-content-between my-20">
+          <div className="grid grid-cols-2 gap-10 place-content-between place-items-center">
             <div className="max-w-2xl justify-self-start">
               <h5 className="uppercase font-bold text-[#3734A9] mb-5">
                 Why Choose Us
@@ -400,15 +404,11 @@ export default function Index() {
                 </figure>
               </div>
             </div>
-            <div className="isolate">
-              <div className="bg-webo-blue rounded-md z-1 relative">
-                <img
-                  src="/images/handwithcard.png"
-                  alt="hand with card"
-                  className="z-2"
-                />
-              </div>
-            </div>
+            <img
+              src="/images/handwithcard.png"
+              alt="hand with card"
+              className="max-h-full"
+            />
           </div>
           {/* Save Money */}
         </section>
