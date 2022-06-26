@@ -222,7 +222,7 @@ export default function Index() {
               <h1 className="text-6xl font-extrabold">
                 Automated portfolio tracking
               </h1>
-              <p className="font-medium my-5">
+              <p className="font-medium text-base my-5">
                 Yet bed any for travelling assistance indulgence unpleasing. Not
                 thoughts all exercise blessing.
               </p>
@@ -422,7 +422,7 @@ export default function Index() {
             <img
               src="/images/handwithcard.png"
               alt="hand with card"
-              className="max-h-full"
+              className="max-h-full xl:-mt-10"
             />
           </div>
           {/* Save Money */}
