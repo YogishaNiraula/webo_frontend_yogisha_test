@@ -5,31 +5,128 @@ import Image from "next/image";
 export default function Index() {
   return (
     <>
-      <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA]">
-        <div className="container mx-auto px-4 pt-16">
-          <nav>
-            <ul className="flex items-baseline justify-between">
-              <li>
-                <a className="text-2xl font-bold">AR Shakir</a>
-              </li>
-              <li>
-                <a className="text-xl">Product</a>
-              </li>
-              <li>
-                <a className="text-xl">Template</a>
-              </li>
-              <li>
-                <a className="text-xl">Blog</a>
-              </li>
-              <li>
-                <a className="text-xl">Pricing</a>
-              </li>
-              <li className="text-xl">Sign in</li>
-              <button className="bg-webo-purple text-white px-5 py-3">
-                Start Free
-              </button>
-            </ul>
-          </nav>
+      <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA] h-screen">
+        <div className="container mx-auto px-4 pt-8">
+          {/* Navbar */}
+          <div className="relative">
+            <div className="flex justify-between items-center py-6 md:justify-start space-x-10">
+              <div className="flex justify-start lg:w-0 lg:flex-1">
+                <a href="#">
+                  <span className="text-2xl font-bold">AR Shakir</span>
+                </a>
+              </div>
+              <nav className="flex space-x-10">
+                <div className="relative group">
+                  <button
+                    type="button"
+                    className="inline-flex items-center text-base font-medium"
+                    aria-expanded="false"
+                  >
+                    <span>Product</span>
+
+                    <svg
+                      className="ml-2 h-5 w-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <div className="absolute z-10 px-2 w-screen max-w-xs hidden group-hover:block">
+                    <div className="rounded-lg shadow-lg overflow-hidden">
+                      <div className="relative grid bg-white px-2 py-6">
+                        <a
+                          href="#"
+                          className="p-3 flex items-start rounded-lg hover:bg-gray-100"
+                        >
+                          Product 1
+                        </a>
+                        <a
+                          href="#"
+                          className="p-3 flex items-start rounded-lg hover:bg-gray-100"
+                        >
+                          Product 2
+                        </a>
+                        <a
+                          href="#"
+                          className="p-3 flex items-start rounded-lg hover:bg-gray-100"
+                        >
+                          Product 3
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative group">
+                  <button
+                    type="button"
+                    className="inline-flex items-center text-base font-medium"
+                    aria-expanded="false"
+                  >
+                    <span>Template</span>
+
+                    <svg
+                      className="ml-2 h-5 w-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <div className="absolute z-10 px-2 w-screen max-w-xs hidden group-hover:block">
+                    <div className="rounded-lg shadow-lg overflow-hidden">
+                      <div className="relative grid bg-white px-2 py-6">
+                        <a
+                          href="#"
+                          className="p-3 flex items-start rounded-lg hover:bg-gray-100"
+                        >
+                          Template 1
+                        </a>
+                        <a
+                          href="#"
+                          className="p-3 flex items-start rounded-lg hover:bg-gray-100"
+                        >
+                          Template 2
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" className="text-base font-medium">
+                  Blog
+                </a>
+                <a href="#" className="text-base font-medium">
+                  Pricing
+                </a>
+              </nav>
+              <div className="flex items-center justify-end flex-1">
+                <a href="#" className="text-base font-medium">
+                  Sign in
+                </a>
+                <a
+                  href="#"
+                  className="ml-8 px-4 py-2 text-base font-medium text-white bg-webo-purple"
+                >
+                  Start Free
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Navbar */}
+
           <div className="grid grid-cols-2 gap-10">
             <div className="my-5 place-self-center">
               <h1 className="text-6xl font-extrabold">
@@ -88,7 +185,7 @@ export default function Index() {
             <img
               src="/images/main.png"
               alt="main image"
-              className="justify-self-end"
+              className="justify-self-end h-screen max-h-fit"
             />
           </div>
         </div>
