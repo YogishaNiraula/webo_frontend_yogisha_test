@@ -5,7 +5,17 @@ import Image from "next/image";
 export default function Index() {
   return (
     <>
-      <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA] xl:h-screen">
+      <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA] xl:h-screen relative">
+        <img
+          src="/images/svg/patterns/pattern1.svg"
+          alt="pattern"
+          className="absolute right-0 top-32"
+        />
+        <img
+          src="/images/svg/patterns/pattern2.svg"
+          alt="pattern"
+          className="absolute left-0 bottom-24"
+        />
         <div className="container mx-auto px-5 pt-8">
           {/* Navbar */}
           <div className="relative hidden md:block">
@@ -183,7 +193,7 @@ export default function Index() {
             <img
               src="/images/main.png"
               alt="main image"
-              className="justify-self-end h-screen max-h-fit hidden md:block"
+              className="justify-self-end h-screen max-h-fit hidden md:block overflow-hidden"
             />
           </div>
         </div>
@@ -325,11 +335,16 @@ export default function Index() {
           {/* Cards */}
           {/* Track Payments */}
           <div className="md:grid grid-cols-2 gap-10 place-content-between">
-            <div>
+            <div className="relative">
               <img
                 src="/images/Card-bg.png"
                 alt="card background"
                 className="max-h-full"
+              />
+              <img
+                src="/images/svg/patterns/pattern3.svg"
+                alt="pattern"
+                className="absolute -top-4 right-32 -translate-x-3"
               />
             </div>
             <div className="max-w-2xl justify-self-end">
@@ -413,7 +428,12 @@ export default function Index() {
           {/* Save Money */}
         </section>
         {/* Features that blows mind */}
-        <section className="bg-webo-blue py-20">
+        <section className="bg-webo-blue py-20 relative">
+          <img
+            src="/images/svg/patterns/pattern4.svg"
+            alt="pattern"
+            className="absolute bottom-14 left-0"
+          />
           <div className="container mx-auto px-5">
             <h1 className="font-extrabold text-6xl">
               Features that blows mind
@@ -478,7 +498,12 @@ export default function Index() {
         </section>
         {/* Features that blows mind */}
         {/* Testimonials */}
-        <section className="container mx-auto py-20 px-5">
+        <section className="container mx-auto py-20 px-5 relative">
+          <img
+            src="/images/svg/patterns/pattern5.svg"
+            alt="pattern"
+            className="absolute top-24 right-10"
+          />
           <h1 className="font-extrabold text-6xl">Testimonials</h1>
           <p className="max-w-prose my-5">
             We so opinion friends me message as delight. Whole front do of plate
@@ -551,7 +576,12 @@ export default function Index() {
         </section>
         {/* Testimonials */}
         {/* Metric */}
-        <section className="bg-webo-purple py-16 text-white">
+        <section className="bg-webo-purple py-16 text-white relative">
+          <img
+            src="/images/svg/patterns/pattern6.svg"
+            alt="pattern"
+            className="absolute right-0 top-6"
+          />
           <div className="container mx-auto px-4 grid xl:grid-cols-4 md:grid-cols-3 place-content-center gap-10 md:gap-0">
             <p className="tracking-wider align-top col-span-full xl:col-span-1 place-self-center text-xl xl:text-base">
               We speak with
@@ -664,71 +694,83 @@ export default function Index() {
         </section>
         {/* Blog */}
         {/* FAQ */}
-        <section className="container mx-auto xl:py-20 py-10 px-5">
-          <h1 className="text-6xl font-extrabold">
-            Frequently
-            <br /> asked questions
-          </h1>
-          <div className="grid xl:grid-cols-3 xl:gap-10 gap-y-10 mt-12">
-            <div className="col-span-2 grid gap-y-4">
-              <details className="border-2 border-gray-300 rounded-md p-5">
-                <summary className="font-extrabold text-xl">
-                  The expense windows adapted sir. Wrong widen drawn.
-                </summary>
-                Offending belonging promotion provision an be oh consulted
-                ourselves it. Blessing welcomed ladyship she met humoured sir
-                breeding her.
-              </details>
-              <details className="border-2 border-gray-300 rounded-md p-5">
-                <summary className="font-extrabold text-xl">
-                  Six curiosity day assurance bed necessary?{" "}
-                </summary>
-                Offending belonging promotion provision an be oh consulted
-                ourselves it. Blessing welcomed ladyship she met humoured sir
-                breeding her.
-              </details>
-              <details className="border-2 border-gray-300 rounded-md p-5">
-                <summary className="font-extrabold text-xl">
-                  Produce say the ten moments parties?{" "}
-                </summary>
-                Offending belonging promotion provision an be oh consulted
-                ourselves it. Blessing welcomed ladyship she met humoured sir
-                breeding her.
-              </details>
-              <details className="border-2 border-gray-300 rounded-md p-5">
-                <summary className="font-extrabold text-xl">
-                  Simple innate summer fat appear basket his desire joy?{" "}
-                </summary>
-                Offending belonging promotion provision an be oh consulted
-                ourselves it. Blessing welcomed ladyship she met humoured sir
-                breeding her.
-              </details>
-              <details className="border-2 border-gray-300 rounded-md p-5">
-                <summary className="font-extrabold text-xl">
-                  Outward clothes promise at gravity do excited?{" "}
-                </summary>
-                Offending belonging promotion provision an be oh consulted
-                ourselves it. Blessing welcomed ladyship she met humoured sir
-                breeding her.
-              </details>
-            </div>
-            <div className="flex flex-col items-center border-2 border-gray-300 rounded-md px-5 py-8">
-              <div className="">
-                <img src="/images/svg/message.svg" alt="message icon" />
+        <section className="py-10 px-5 relative">
+          <img
+            src="/images/svg/patterns/pattern8.svg"
+            alt="pattern"
+            className="absolute left-0 top-36"
+          />
+          <img
+            src="/images/svg/patterns/pattern9.svg"
+            alt="pattern"
+            className="absolute right-0 top-20"
+          />
+          <div className="container mx-auto xl:py-20">
+            <h1 className="text-6xl font-extrabold">
+              Frequently
+              <br /> asked questions
+            </h1>
+            <div className="grid xl:grid-cols-3 xl:gap-10 gap-y-10 mt-12">
+              <div className="col-span-2 grid gap-y-4">
+                <details className="border-2 border-gray-300 rounded-md p-5">
+                  <summary className="font-extrabold text-xl">
+                    The expense windows adapted sir. Wrong widen drawn.
+                  </summary>
+                  Offending belonging promotion provision an be oh consulted
+                  ourselves it. Blessing welcomed ladyship she met humoured sir
+                  breeding her.
+                </details>
+                <details className="border-2 border-gray-300 rounded-md p-5">
+                  <summary className="font-extrabold text-xl">
+                    Six curiosity day assurance bed necessary?{" "}
+                  </summary>
+                  Offending belonging promotion provision an be oh consulted
+                  ourselves it. Blessing welcomed ladyship she met humoured sir
+                  breeding her.
+                </details>
+                <details className="border-2 border-gray-300 rounded-md p-5">
+                  <summary className="font-extrabold text-xl">
+                    Produce say the ten moments parties?{" "}
+                  </summary>
+                  Offending belonging promotion provision an be oh consulted
+                  ourselves it. Blessing welcomed ladyship she met humoured sir
+                  breeding her.
+                </details>
+                <details className="border-2 border-gray-300 rounded-md p-5">
+                  <summary className="font-extrabold text-xl">
+                    Simple innate summer fat appear basket his desire joy?{" "}
+                  </summary>
+                  Offending belonging promotion provision an be oh consulted
+                  ourselves it. Blessing welcomed ladyship she met humoured sir
+                  breeding her.
+                </details>
+                <details className="border-2 border-gray-300 rounded-md p-5">
+                  <summary className="font-extrabold text-xl">
+                    Outward clothes promise at gravity do excited?{" "}
+                  </summary>
+                  Offending belonging promotion provision an be oh consulted
+                  ourselves it. Blessing welcomed ladyship she met humoured sir
+                  breeding her.
+                </details>
               </div>
-              <div className="text-center my-6">
-                <h5 className="font-extrabold text-2xl">
-                  Do you have more questions?
-                </h5>
-                <p>
-                  End-to-end payments and financial management in a single
-                  solution. Meet the right platform to help realize.
-                </p>
-              </div>
-              <div>
-                <button className="bg-webo-red text-white px-24 py-4 self-end">
-                  Shoot a Direct Mail
-                </button>
+              <div className="flex flex-col items-center border-2 border-gray-300 rounded-md px-5 py-8">
+                <div className="">
+                  <img src="/images/svg/message.svg" alt="message icon" />
+                </div>
+                <div className="text-center my-6">
+                  <h5 className="font-extrabold text-2xl">
+                    Do you have more questions?
+                  </h5>
+                  <p>
+                    End-to-end payments and financial management in a single
+                    solution. Meet the right platform to help realize.
+                  </p>
+                </div>
+                <div>
+                  <button className="bg-webo-red text-white px-24 py-4 self-end">
+                    Shoot a Direct Mail
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -736,8 +778,33 @@ export default function Index() {
         {/* FAQ */}
         {/* Discover */}
         <section className="container mx-auto py-20 px-5">
-          <div className="bg-webo-purple rounded-xl px-16 py-20 flex flex-col items-center">
-            <h1 className="text-white text-5xl font-extrabold text-center">
+          <div className="bg-webo-purple rounded-xl px-16 py-20 flex flex-col items-center relative">
+            <img
+              src="/images/svg/patterns/pattern10.svg"
+              alt="pattern"
+              className="absolute left-28 bottom-20"
+            />
+            <img
+              src="/images/svg/patterns/pattern10.svg"
+              alt="pattern"
+              className="rotate-90 absolute right-28 top-5"
+            />
+            <img
+              src="/images/svg/patterns/pattern11.svg"
+              alt="pattern"
+              className="absolute left-1/3 top-16 -translate-x-48"
+            />
+            <img
+              src="/images/svg/patterns/pattern12.svg"
+              alt="pattern"
+              className="absolute left-1/3 bottom-1/3 -translate-x-36"
+            />
+            <img
+              src="/images/svg/patterns/pattern13.svg"
+              alt="pattern"
+              className="absolute right-10 bottom-10"
+            />
+            <h1 className="text-white text-6xl font-extrabold text-center my-10">
               Discover a better way to
               <br /> manage spendings
             </h1>
@@ -756,7 +823,7 @@ export default function Index() {
               Finance helps companies <br />
               manage payments easily.
             </p>
-            <section className="flex space-x-8">
+            <section className="flex space-x-4">
               <a href="https://www.linkedin.com/">
                 <img
                   src="/images/svg/social/linkedin.svg"
