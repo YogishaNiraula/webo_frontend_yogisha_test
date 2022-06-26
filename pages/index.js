@@ -688,13 +688,13 @@ export default function Index() {
       </main>
       <footer className="container mx-auto">
         <div className="grid grid-cols-4 gap-8 mt-10 mb-20">
-          <section className="flex flex-col justify-between">
+          <section className="flex flex-col space-y-4">
             <h3 className="font-bold text-xl">AR Shakir</h3>
             <p className="text-paragraph-gray">
               Finance helps companies <br />
               manage payments easily.
             </p>
-            <span className="flex flex-row justify-between">
+            <section className="flex space-x-8">
               <a href="https://www.linkedin.com/">
                 <img
                   src="/images/svg/social/linkedin.svg"
@@ -713,7 +713,7 @@ export default function Index() {
               <a href="https://twoo.com/">
                 <img src="/images/svg/social/twoo.svg" alt="twoo logo" />
               </a>
-            </span>
+            </section>
           </section>
           <section className="flex flex-col justify-between">
             <h3 className="font-bold text-xl">Company</h3>
@@ -731,7 +731,7 @@ export default function Index() {
           </section>
           <section className="flex flex-col">
             <h3 className="font-bold text-xl">Join Our Newsletter</h3>
-            <form className="flex">
+            <form className="flex my-3">
               <input
                 type="email"
                 placeholder="Your email address"
