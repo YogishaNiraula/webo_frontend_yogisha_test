@@ -490,8 +490,8 @@ export default function Index() {
         {/* Testimonials */}
         {/* Metric */}
         <section className="bg-webo-purple py-16 text-white">
-          <div className="container mx-auto grid grid-cols-4">
-            <p className="mzx-w-xs tracking-wider align-top">
+          <div className="container mx-auto px-4 grid grid-cols-4">
+            <p className="tracking-wider align-top">
               We speak with
               <br /> our powerful
               <br /> statistics
@@ -663,7 +663,7 @@ export default function Index() {
                   solution. Meet the right platform to help realize.
                 </p>
               </div>
-              <div className="flex items-stretch">
+              <div>
                 <button className="bg-webo-red text-white px-24 py-4 self-end">
                   Shoot a Direct Mail
                 </button>
@@ -686,8 +686,8 @@ export default function Index() {
         </section>
         {/* Discover */}
       </main>
-      <footer className="container mx-auto">
-        <div className="grid grid-cols-4 gap-8 mt-10 mb-20">
+      <footer className="container mx-auto px-5">
+        <div className="grid grid-cols-4 2xl:gap-8 mt-10 mb-20">
           <section className="flex flex-col space-y-4">
             <h3 className="font-bold text-xl">AR Shakir</h3>
             <p className="text-paragraph-gray">
@@ -739,7 +739,7 @@ export default function Index() {
               />
               <button
                 type="submit"
-                className="bg-webo-purple text-white px-5 py-2"
+                className="bg-webo-purple xl:text-white px-2 2xl:px-4 py-2"
               >
                 Subscribe
               </button>
