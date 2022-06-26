@@ -5,12 +5,12 @@ import Image from "next/image";
 export default function Index() {
   return (
     <>
-      <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA] h-screen">
-        <div className="container mx-auto px-4 pt-8">
+      <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA] xl:h-screen">
+        <div className="container mx-auto px-5 pt-8">
           {/* Navbar */}
-          <div className="relative">
+          <div className="relative hidden md:block">
             <div className="flex justify-between items-center py-6 md:justify-start space-x-10">
-              <div className="flex justify-start lg:w-0 lg:flex-1">
+              <div className="flex justify-start xl:w-0 xl:flex-1">
                 <a href="#">
                   <span className="text-2xl font-bold">AR Shakir</span>
                 </a>
@@ -121,7 +121,7 @@ export default function Index() {
           </div>
           {/* Navbar */}
 
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 gap-10">
             <div className="my-5 place-self-center">
               <h1 className="text-6xl font-extrabold">
                 Managing freelance payments has never been easier
@@ -130,8 +130,8 @@ export default function Index() {
                 Yet bed any for traveling assistance indulgence unpleasing. Not
                 thoughts all exercise blessing.
               </p>
-              <div className="flex max-w-sm space-x-10">
-                <button className="bg-webo-purple text-white rounded-full px-8 py-2">
+              <div className="flex md:flex-row flex-col max-w-sm space-x-10 space-y-5">
+                <button className="bg-webo-purple text-white rounded-full md:px-8 md:py-2 py-3">
                   Get Started
                 </button>
                 <span className="flex items-center">
@@ -143,7 +143,7 @@ export default function Index() {
                   <a className="text-paragraph-gray ml-3">See How It Works</a>
                 </span>
               </div>
-              <div className="flex items-baseline max-w-sm text-paragraph-gray my-10">
+              <div className="flex items-baseline max-w-sm text-paragraph-gray my-10 justify-center md:justify-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -183,7 +183,7 @@ export default function Index() {
             <img
               src="/images/main.png"
               alt="main image"
-              className="justify-self-end h-screen max-h-fit"
+              className="justify-self-end h-screen max-h-fit hidden md:block"
             />
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function Index() {
           <h2 className="text-center text-2xl mb-6">
             Over 32k+ software businesses growing with AR Shakir.
           </h2>
-          <div className="grid md:grid-cols-7 justify-items-center gap-4 container mx-auto">
+          <div className="grid md:grid-cols-7 justify-items-center gap-4 container mx-auto px-5">
             <img src="/images/companies/OpenZeppelin.png" alt="OpenZeppelin" />
             <img src="/images/companies/Oracle.png" alt="Oracle" />
             <img src="/images/companies/Morpheus.png" alt="Morpheus" />
@@ -205,9 +205,9 @@ export default function Index() {
           </div>
         </section>
         {/* Companies Logo */}
-        <section className="container mx-auto pt-16">
+        <section className="container mx-auto px-5 pt-16 pb-16 xl:pb-0">
           {/* Automated Tracking */}
-          <div className="flex justify-between">
+          <div className="flex xl:flex-row flex-col justify-between">
             <div className="max-w-lg">
               <h1 className="text-6xl font-extrabold">
                 Automated portfolio tracking
@@ -246,7 +246,7 @@ export default function Index() {
           </div>
           {/* Automated Tracking */}
           {/* Cards */}
-          <div className="grid grid-cols-3 gap-16 my-20">
+          <div className="grid md:grid-cols-3 xl:gap-16 gap-5 my-20">
             <div className="border-2 border-slate-300 rounded-2xl p-5">
               <h1 className="font-extrabold">01</h1>
               <div className="flex justify-center">
@@ -366,7 +366,7 @@ export default function Index() {
           </div>
           {/* Track Pyaments */}
           {/* Save Money */}
-          <div className="grid grid-cols-2 gap-10 place-content-between place-items-center">
+          <div className="grid md:grid-cols-2 gap-10 place-content-between place-items-center mt-10 md:my-0">
             <div className="max-w-2xl justify-self-start">
               <h5 className="uppercase font-bold text-[#3734A9] mb-5">
                 Why Choose Us
@@ -414,7 +414,7 @@ export default function Index() {
         </section>
         {/* Features that blows mind */}
         <section className="bg-webo-blue py-20">
-          <div className="container mx-auto">
+          <div className="container mx-auto px-5">
             <h1 className="font-extrabold text-6xl">
               Features that blows mind
             </h1>
@@ -422,7 +422,7 @@ export default function Index() {
               We so opinion friends me message as delight. Whole front do of
               plate heard oh ought. His defective nor convinced residence own.
             </p>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid md:grid-cols-3 xl:gap-10 gap-4">
               <div className="bg-gray-50 rounded-2xl p-5 border-2 border-slate-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -461,7 +461,7 @@ export default function Index() {
                   plate heard oh ought.
                 </p>
               </div>
-              <div className="grid gap-10">
+              <div className="grid xl:gap-10 gap-5">
                 <div className="bg-gray-50 rounded-2xl p-5 border-2 border-slate-200">
                   <h1 className="text-2xl font-extrabold mt-5 mb-3">
                     Merits behind on afraid or warmly
@@ -478,7 +478,7 @@ export default function Index() {
         </section>
         {/* Features that blows mind */}
         {/* Testimonials */}
-        <section className="container mx-auto py-20">
+        <section className="container mx-auto py-20 px-5">
           <h1 className="font-extrabold text-6xl">Testimonials</h1>
           <p className="max-w-prose my-5">
             We so opinion friends me message as delight. Whole front do of plate
@@ -490,8 +490,8 @@ export default function Index() {
         {/* Testimonials */}
         {/* Metric */}
         <section className="bg-webo-purple py-16 text-white">
-          <div className="container mx-auto px-4 grid grid-cols-4">
-            <p className="tracking-wider align-top">
+          <div className="container mx-auto px-4 grid xl:grid-cols-4 md:grid-cols-3 place-content-center gap-10 md:gap-0">
+            <p className="tracking-wider align-top col-span-full xl:col-span-1 place-self-center text-xl xl:text-base">
               We speak with
               <br /> our powerful
               <br /> statistics
@@ -533,7 +533,7 @@ export default function Index() {
         </section>
         {/* Metric */}
         {/* Blog */}
-        <section className="container mx-auto py-20">
+        <section className="container mx-auto xl:py-20 py-10 px-5">
           <h1 className="text-6xl font-extrabold">Recent Blogs</h1>
           <article className="grid grid-cols-2 gap-4 place-content-between my-6">
             <section className="justify-self-start place-self-center">
@@ -559,7 +559,7 @@ export default function Index() {
               className="justify-self-end"
             />
           </article>
-          <div className="grid grid-cols-3">
+          <div className="grid xl:grid-cols-3">
             <article>
               <header>
                 <h5 className="uppercase font-bold tracking-wider">
@@ -602,12 +602,12 @@ export default function Index() {
         </section>
         {/* Blog */}
         {/* FAQ */}
-        <section className="container mx-auto py-20">
+        <section className="container mx-auto xl:py-20 py-10 px-5">
           <h1 className="text-6xl font-extrabold">
             Frequently
             <br /> asked questions
           </h1>
-          <div className="grid grid-cols-3 gap-10 mt-12">
+          <div className="grid xl:grid-cols-3 xl:gap-10 gap-y-10 mt-12">
             <div className="col-span-2 grid gap-y-4">
               <details className="border-2 border-gray-300 rounded-md p-5">
                 <summary className="font-extrabold text-xl">
@@ -673,7 +673,7 @@ export default function Index() {
         </section>
         {/* FAQ */}
         {/* Discover */}
-        <section className="container mx-auto py-20">
+        <section className="container mx-auto py-20 px-5">
           <div className="bg-webo-purple rounded-xl px-16 py-20 flex flex-col items-center">
             <h1 className="text-white text-5xl font-extrabold text-center">
               Discover a better way to
@@ -687,7 +687,7 @@ export default function Index() {
         {/* Discover */}
       </main>
       <footer className="container mx-auto px-5">
-        <div className="grid grid-cols-4 2xl:gap-8 mt-10 mb-20">
+        <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-0 2xl:gap-8 mt-10 xl:mb-20">
           <section className="flex flex-col space-y-4">
             <h3 className="font-bold text-xl">AR Shakir</h3>
             <p className="text-paragraph-gray">
@@ -717,19 +717,19 @@ export default function Index() {
           </section>
           <section className="flex flex-col justify-between">
             <h3 className="font-bold text-xl">Company</h3>
-            <a>About Us</a>
-            <a>Careers</a>
-            <a>Blog</a>
-            <a>Pricing</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
           </section>
           <section className="flex flex-col justify-between">
             <h3 className="font-bold text-xl">Resources</h3>
-            <a>Proposal Template</a>
-            <a>Invoice Template</a>
-            <a>Tutorial</a>
-            <a>How to write a contract</a>
+            <a href="#">Proposal Template</a>
+            <a href="#">Invoice Template</a>
+            <a href="#">Tutorial</a>
+            <a href="#">How to write a contract</a>
           </section>
-          <section className="flex flex-col">
+          <section className="flex flex-col mt-10 xl:m-0">
             <h3 className="font-bold text-xl">Join Our Newsletter</h3>
             <form className="flex my-3">
               <input
@@ -739,7 +739,7 @@ export default function Index() {
               />
               <button
                 type="submit"
-                className="bg-webo-purple xl:text-white px-2 2xl:px-4 py-2"
+                className="bg-webo-purple text-white px-2 2xl:px-4 py-2"
               >
                 Subscribe
               </button>
