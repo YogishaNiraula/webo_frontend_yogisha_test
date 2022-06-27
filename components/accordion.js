@@ -9,7 +9,7 @@ export default function FAQ(props) {
     >
       <Accordion.Item value="item-2">
         <Accordion.Header>
-          <Accordion.Trigger className="flex justify-between">
+          <Accordion.Trigger className="flex justify-between w-full">
             <span className="font-extrabold text-xl">{props.summary}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ export default function FAQ(props) {
             </svg>
           </Accordion.Trigger>
         </Accordion.Header>
-        <Accordion.Content>{props.details}</Accordion.Content>
+        <Accordion.Content className="py-4">{props.details}</Accordion.Content>
       </Accordion.Item>
     </Accordion.Root>
   );
