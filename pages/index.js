@@ -3,6 +3,7 @@ import Heading from "../components/heading.js";
 import FAQ from "../components/accordion.js";
 import Card from "../components/card.js";
 import Image from "next/image";
+import Stats from "../components/stat.js";
 
 export default function Index() {
   return (
@@ -527,44 +528,29 @@ export default function Index() {
             className="absolute right-0 top-6"
           />
           <div className="container mx-auto px-4 grid xl:grid-cols-4 md:grid-cols-3 place-content-center gap-10 md:gap-0">
-            <p className="tracking-wider align-top col-span-full xl:col-span-1 place-self-center text-xl xl:text-base">
+            <p className="tracking-widest align-top col-span-full xl:col-span-1 place-self-center text-xl xl:text-base">
               We speak with
               <br /> our powerful
               <br /> statistics
             </p>
-            <div>
-              <h1 className="text-7xl font-extrabold">1M+</h1>
-              <label>
-                <span className="flex items-baseline">
-                  <img src="/images/svg/person.svg" alt="person" />
-                  <h3 className="text-xl font-normal tracking-wide ml-4">
-                    Active Users
-                  </h3>
-                </span>
-              </label>
-            </div>
-            <div>
-              <h1 className="text-7xl font-extrabold">30K+</h1>
-              <label>
-                <span className="flex items-baseline">
-                  <img src="/images/svg/star.svg" alt="star" />
-                  <h3 className="text-xl font-normal tracking-wide ml-4">
-                    5-Stars Reviews
-                  </h3>
-                </span>
-              </label>
-            </div>
-            <div>
-              <h1 className="text-7xl font-extrabold">$252M</h1>
-              <label>
-                <span className="flex items-baseline">
-                  <img src="/images/svg/star.svg" alt="star" />
-                  <h3 className="text-xl font-normal tracking-wide ml-4">
-                    Transactions
-                  </h3>
-                </span>
-              </label>
-            </div>
+            <Stats
+              metric="1M+"
+              src="/images/svg/person.svg"
+              alt="person"
+              text="Active Users"
+            />
+            <Stats
+              metric="30K+"
+              src="/images/svg/star.svg"
+              alt="star"
+              text="5-Stars Reviews"
+            />
+            <Stats
+              metric="$252M"
+              src="/images/svg/star.svg"
+              alt="star"
+              text="Transactions"
+            />
           </div>
         </section>
         {/* Metric */}
