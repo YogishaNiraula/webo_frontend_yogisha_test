@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+import Heading from "../components/heading.js";
 import FAQ from "../components/accordion.js";
+import Card from "../components/card.js";
 import Image from "next/image";
 
 export default function Index() {
@@ -133,9 +135,7 @@ export default function Index() {
 
           <div className="grid md:grid-cols-2 gap-10">
             <div className="my-5 place-self-center">
-              <h1 className="text-6xl font-extrabold">
-                Managing freelance payments has never been easier
-              </h1>
+              <Heading title="Managing freelance payments has never been easier" />
               <p className="text-paragraph-gray max-w-sm text-xl my-6">
                 Yet bed any for traveling assistance indulgence unpleasing. Not
                 thoughts all exercise blessing.
@@ -219,118 +219,65 @@ export default function Index() {
           {/* Automated Tracking */}
           <div className="flex xl:flex-row flex-col justify-between">
             <div className="max-w-lg">
-              <h1 className="text-6xl font-extrabold">
-                Automated portfolio tracking
-              </h1>
+              <Heading title="Automated portfolio tracking" />
               <p className="font-medium text-base my-5">
-                Yet bed any for travelling assistance indulgence unpleasing. Not
+                Yet bed any for traveling assistance indulgence unpleasing. Not
                 thoughts all exercise blessing.
               </p>
             </div>
-            <div className="bg-quote-gray p-9 rounded-2xl max-w-md relative">
-              <svg
-                className="absolute -top-4 left-5"
-                xmlns="http://www.w3.org/2000/svg"
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-              >
-                <circle cx="22" cy="22" r="22" fill="black" />
-                <path
-                  d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
-                  fill="white"
-                />
-              </svg>
-              <figure>
-                <blockquote>
-                  Wise busy past both park when an ye no. Nay likely her length
-                  sooner thrown sex lively income. The expense windows adapted
-                  sir. Wrong widen.
-                </blockquote>
-                <figcaption className="mt-4">
-                  - Mike Taylor, Web Designer
-                </figcaption>
-              </figure>
+            <div>
+              <div className="bg-quote-gray p-9 rounded-2xl max-w-md relative">
+                <svg
+                  className="absolute -top-4 left-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                >
+                  <circle cx="22" cy="22" r="22" fill="black" />
+                  <path
+                    d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
+                    fill="white"
+                  />
+                </svg>
+                <figure>
+                  <blockquote>
+                    Wise busy past both park when an ye no. Nay likely her
+                    length sooner thrown sex lively income. The expense windows
+                    adapted sir. Wrong widen.
+                  </blockquote>
+                  <figcaption className="mt-4">
+                    - Mike Taylor, Web Designer
+                  </figcaption>
+                </figure>
+              </div>
             </div>
           </div>
           {/* Automated Tracking */}
           {/* Cards */}
           <div className="grid md:grid-cols-3 xl:gap-16 gap-5 my-20">
-            <div className="border-2 border-slate-300 rounded-2xl p-5">
-              <h1 className="font-extrabold">01</h1>
-              <div className="flex justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="45"
-                  viewBox="0 0 50 45"
-                  fill="none"
-                >
-                  <rect y="15" width="50" height="30" fill="#3734A9" />
-                  <rect width="39" height="10" fill="black" />
-                </svg>
-              </div>
-              <div className="grid justify-items-center">
-                <h1 className="text-3xl font-extrabold max-w-xs text-center justify-self-center mt-5 mb-3">
-                  Connect wallets & companies
-                </h1>
-                <p className="max-w-xs text-paragraph-gray text-center">
-                  Indulgence way everything joy alteration boisterous the
-                  attachment. Party we years to order allow asked of.{" "}
-                </p>
-              </div>
-            </div>
-            <div className="border-2 border-slate-300 rounded-2xl px-5 py-8">
-              <h1 className="font-extrabold">02</h1>
-              <div className="flex justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="45"
-                  viewBox="0 0 50 45"
-                  fill="none"
-                >
-                  <rect y="15" width="50" height="30" fill="#FF7F5C" />
-                  <rect width="39" height="10" fill="black" />
-                </svg>
-              </div>
-              <div className="grid justify-items-center">
-                <h1 className="text-3xl font-extrabold max-w-xs text-center justify-self-center mt-5 mb-3">
-                  Review <br />
-                  transactions
-                </h1>
-                <p className="max-w-xs text-paragraph-gray text-center">
-                  Indulgence way everything joy alteration boisterous the
-                  attachment. Party we years to order allow asked of.
-                </p>
-              </div>
-            </div>
-            <div className="border-2 border-slate-300 rounded-2xl p-5">
-              <h1 className="font-extrabold">03</h1>
-              <div className="flex justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="45"
-                  viewBox="0 0 50 45"
-                  fill="none"
-                >
-                  <rect y="15" width="50" height="30" fill="#FDBC64" />
-                  <rect width="39" height="10" fill="black" />
-                </svg>
-              </div>
-              <div className="grid justify-items-center">
-                <h1 className="text-3xl font-extrabold max-w-xs text-center justify-self-center mt-5 mb-3">
-                  Get income
-                  <br /> insights
-                </h1>
-                <p className="max-w-xs text-paragraph-gray text-center">
-                  Indulgence way everything joy alteration boisterous the
-                  attachment. Party we years to order allow asked of.
-                </p>
-              </div>
-            </div>
+            <Card
+              number="01"
+              color="#3734A9"
+              title="Connect wallets & companies"
+              description="Indulgence way everything joy alteration boisterous the
+                  attachment. Party we years to order allow asked of."
+            />
+            <Card
+              number="02"
+              color="#FF7F5C"
+              title="Review transactions"
+              description="Indulgence way everything joy alteration boisterous the
+                  attachment. Party we years to order allow asked of."
+            />
+            <Card
+              number="03"
+              color="#FDBC64"
+              title="Get income insights"
+              description="Indulgence way everything joy alteration boisterous the
+                  attachment. Party we years to order allow asked of."
+            />
           </div>
           {/* Cards */}
           {/* Track Payments */}
@@ -351,11 +298,12 @@ export default function Index() {
               <h5 className="uppercase font-bold text-[#3734A9] mb-5">
                 Why Choose Us
               </h5>
-              <h1 className="text-6xl font-extrabold">
-                Track your payments
-                <br /> on the go with the
-                <br /> best way possible
-              </h1>
+              <Heading
+                title={`Track your payments
+                 on the go with the
+                 best way possible`}
+              />
+
               <p className="my-5 text-paragraph-gray">
                 Indulgence way everything joy alteration boisterous the
                 attachment. Party we years to order allow asked of.
@@ -386,9 +334,7 @@ export default function Index() {
               <h5 className="uppercase font-bold text-[#3734A9] mb-5">
                 Why Choose Us
               </h5>
-              <h1 className="text-6xl font-extrabold">
-                Save money with proper transaction
-              </h1>
+              <Heading title="Save money with proper transaction" />
               <p className="my-5 text-paragraph-gray">
                 We so opinion friends me message as delight. Whole front do of
                 plate heard oh ought. His defective nor convinced residence own.
@@ -435,9 +381,7 @@ export default function Index() {
             className="absolute bottom-14 left-0"
           />
           <div className="container mx-auto px-5">
-            <h1 className="font-extrabold text-6xl">
-              Features that blows mind
-            </h1>
+            <Heading title="Features that blows mind" />
             <p className="max-w-prose my-5">
               We so opinion friends me message as delight. Whole front do of
               plate heard oh ought. His defective nor convinced residence own.
@@ -504,7 +448,7 @@ export default function Index() {
             alt="pattern"
             className="absolute top-24 right-10"
           />
-          <h1 className="font-extrabold text-6xl">Testimonials</h1>
+          <Heading title="Testimonials" />
           <p className="max-w-prose my-5">
             We so opinion friends me message as delight. Whole front do of plate
             heard oh ought. His defective nor convinced residence own.
@@ -626,7 +570,7 @@ export default function Index() {
         {/* Metric */}
         {/* Blog */}
         <section className="container mx-auto xl:py-20 py-10 px-5">
-          <h1 className="text-6xl font-extrabold">Recent Blogs</h1>
+          <Heading title="Recent Blogs" />
           <article className="grid grid-cols-2 gap-4 place-content-between my-6">
             <section className="justify-self-start place-self-center">
               <header>
@@ -706,10 +650,10 @@ export default function Index() {
             className="absolute right-0 top-20"
           />
           <div className="container mx-auto xl:py-20">
-            <h1 className="text-6xl font-extrabold">
-              Frequently
-              <br /> asked questions
-            </h1>
+            <Heading
+              title="Frequently
+            asked questions"
+            />
             <div className="grid xl:grid-cols-3 xl:gap-10 gap-y-10 mt-12">
               <div className="col-span-2 grid gap-y-4">
                 <FAQ
@@ -794,10 +738,12 @@ export default function Index() {
               alt="pattern"
               className="absolute right-10 bottom-10"
             />
-            <h1 className="text-white text-6xl font-extrabold text-center my-10">
-              Discover a better way to
-              <br /> manage spendings
-            </h1>
+            <Heading
+              className="text-white text-center my-10"
+              title="Discover a better way to
+              manage spendings"
+            />
+            <h1 className="text-white text-6xl font-extrabold text-center my-10"></h1>
             <button className="bg-webo-red rounded-md py-4 px-8 my-10 text-white">
               Get Started Now
             </button>
