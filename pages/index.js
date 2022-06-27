@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-// import Layout from "../components/layout";
+import FAQ from "../components/accordion.js";
 import Image from "next/image";
 
 export default function Index() {
@@ -712,46 +712,36 @@ export default function Index() {
             </h1>
             <div className="grid xl:grid-cols-3 xl:gap-10 gap-y-10 mt-12">
               <div className="col-span-2 grid gap-y-4">
-                <details className="border-2 border-gray-300 rounded-md p-5">
-                  <summary className="font-extrabold text-xl">
-                    The expense windows adapted sir. Wrong widen drawn.
-                  </summary>
-                  Offending belonging promotion provision an be oh consulted
+                <FAQ
+                  details="Offending belonging promotion provision an be oh consulted
                   ourselves it. Blessing welcomed ladyship she met humoured sir
-                  breeding her.
-                </details>
-                <details className="border-2 border-gray-300 rounded-md p-5">
-                  <summary className="font-extrabold text-xl">
-                    Six curiosity day assurance bed necessary?{" "}
-                  </summary>
-                  Offending belonging promotion provision an be oh consulted
+                  breeding her."
+                  summary="The expense windows adapted sir. Wrong widen drawn."
+                />
+                <FAQ
+                  details="Offending belonging promotion provision an be oh consulted
                   ourselves it. Blessing welcomed ladyship she met humoured sir
-                  breeding her.
-                </details>
-                <details className="border-2 border-gray-300 rounded-md p-5">
-                  <summary className="font-extrabold text-xl">
-                    Produce say the ten moments parties?{" "}
-                  </summary>
-                  Offending belonging promotion provision an be oh consulted
+                  breeding her."
+                  summary="Six curiosity day assurance bed necessary?"
+                />
+                <FAQ
+                  details="Offending belonging promotion provision an be oh consulted
                   ourselves it. Blessing welcomed ladyship she met humoured sir
-                  breeding her.
-                </details>
-                <details className="border-2 border-gray-300 rounded-md p-5">
-                  <summary className="font-extrabold text-xl">
-                    Simple innate summer fat appear basket his desire joy?{" "}
-                  </summary>
-                  Offending belonging promotion provision an be oh consulted
+                  breeding her."
+                  summary="Produce say the ten moments parties?"
+                />
+                <FAQ
+                  details="Offending belonging promotion provision an be oh consulted
                   ourselves it. Blessing welcomed ladyship she met humoured sir
-                  breeding her.
-                </details>
-                <details className="border-2 border-gray-300 rounded-md p-5">
-                  <summary className="font-extrabold text-xl">
-                    Outward clothes promise at gravity do excited?{" "}
-                  </summary>
-                  Offending belonging promotion provision an be oh consulted
+                  breeding her."
+                  summary="Simple innate summer fat appear basket his desire joy?"
+                />
+                <FAQ
+                  details="Offending belonging promotion provision an be oh consulted
                   ourselves it. Blessing welcomed ladyship she met humoured sir
-                  breeding her.
-                </details>
+                  breeding her."
+                  summary="Outward clothes promise at gravity do excited?"
+                />
               </div>
               <div className="flex flex-col items-center border-2 border-gray-300 rounded-md px-5 py-8">
                 <div className="">
