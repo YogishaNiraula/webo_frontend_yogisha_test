@@ -433,7 +433,7 @@ export default function Index() {
           </p>
           {/* Slider */}
           <SimpleSlider>
-            <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <div className="flex md:flex-row flex-col border-2 border-gray-300 rounded-md p-10 md:p-5 relative">
               <svg
                 className="absolute -top-8 left-5 h-16 w-16"
                 xmlns="http://www.w3.org/2000/svg"
@@ -463,7 +463,7 @@ export default function Index() {
                 alt="picture of a girl"
               />
             </div>
-            <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <div className="flex md:flex-row flex-col border-2 border-gray-300 rounded-md p-10 md:p-5 relative">
               <svg
                 className="absolute -top-8 left-5 h-16 w-16"
                 xmlns="http://www.w3.org/2000/svg"
@@ -489,11 +489,12 @@ export default function Index() {
                 </figcaption>
               </figure>
               <img
+                className="h-[25rem] md:h-full"
                 src="/images/testimonials/Testimonial2.png"
                 alt="picture of a boy"
               />
             </div>
-            <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <div className="flex md:flex-row flex-col border-2 border-gray-300 rounded-md p-10 md:p-5 relative">
               <svg
                 className="absolute -top-8 left-5 h-16 w-16"
                 xmlns="http://www.w3.org/2000/svg"
@@ -519,11 +520,12 @@ export default function Index() {
                 </figcaption>
               </figure>
               <img
+                className="h-[25rem] md:h-full"
                 src="/images/testimonials/Testimonial2.png"
                 alt="picture of a boy"
               />
             </div>
-            <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <div className="flex md:flex-row flex-col border-2 border-gray-300 rounded-md p-10 md:p-5 relative">
               <svg
                 className="absolute -top-8 left-5 h-16 w-16"
                 xmlns="http://www.w3.org/2000/svg"
@@ -553,7 +555,7 @@ export default function Index() {
                 alt="picture of a girl"
               />
             </div>
-            <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <div className="flex md:flex-row flex-col border-2 border-gray-300 rounded-md p-10 md:p-5 relative">
               <svg
                 className="absolute -top-8 left-5 h-16 w-16"
                 xmlns="http://www.w3.org/2000/svg"
@@ -579,6 +581,7 @@ export default function Index() {
                 </figcaption>
               </figure>
               <img
+                className="h-[25rem] md:h-full"
                 src="/images/testimonials/Testimonial2.png"
                 alt="picture of a boy"
               />

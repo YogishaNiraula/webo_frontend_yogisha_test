@@ -11,9 +11,33 @@ export function SimpleSlider({ children }) {
         speed={500}
         slidesToShow={2}
         slidesToScroll={2}
-        autoplay={true}
         autoplaySpeed={3000}
         adaptiveHeight={true}
+        responsive={[
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 2,
+              initialSlide: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 2,
+              initialSlide: 1,
+            },
+          },
+        ]}
       >
         {children.map((child, index) => {
           return (
