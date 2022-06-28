@@ -11,6 +11,7 @@ export function SimpleSlider({ children }) {
         speed={500}
         slidesToShow={2}
         slidesToScroll={2}
+        autoplay={true}
         autoplaySpeed={3000}
         adaptiveHeight={true}
         responsive={[
