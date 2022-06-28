@@ -5,11 +5,11 @@ export default function FAQ(props) {
     <Accordion.Root
       type="single"
       collapsible
-      className="border-2 border-gray-300 rounded-md p-5"
+      className="border-2 border-gray-300 rounded-md p-5 bg-white"
     >
-      <Accordion.Item value="item-2">
+      <Accordion.Item value="item-2" className="bg-white">
         <Accordion.Header>
-          <Accordion.Trigger className="flex justify-between w-full">
+          <Accordion.Trigger className="flex justify-between w-full ">
             <span className="font-extrabold text-xl">{props.summary}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -16,7 +16,7 @@ export default function Card(props) {
           </svg>
         </div>
         <div className="grid justify-items-center">
-          <h1 className="text-3xl font-extrabold max-w-xs text-center justify-self-center mt-5 mb-3">
+          <h1 className="text-3xl font-extrabold max-w-[16rem] text-center justify-self-center mt-5 mb-3">
             {props.title}
           </h1>
           <p className="max-w-xs text-paragraph-gray text-center">

@@ -14,6 +14,12 @@ module.exports = {
         "webo-purple": "#3734A9",
         "webo-red": "#FF7F5C",
       },
+      container: {
+        screens: {
+          xl: "1248px",
+          "2xl": "1248px",
+        },
+      },
     },
   },
   plugins: [],

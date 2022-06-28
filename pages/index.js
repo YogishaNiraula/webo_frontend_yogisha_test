@@ -2,9 +2,9 @@
 import Heading from "../components/heading.js";
 import FAQ from "../components/accordion.js";
 import Card from "../components/card.js";
-import Image from "next/image";
 import Stats from "../components/stat.js";
 import Quote from "../components/quote.js";
+import Blog from "../components/blog.js";
 
 export default function Index() {
   return (
@@ -137,25 +137,28 @@ export default function Index() {
 
           <div className="grid md:grid-cols-2 gap-10">
             <div className="my-5 place-self-center">
-              <Heading title="Managing freelance payments has never been easier" />
+              <Heading
+                className=""
+                title="Managing freelance payments has never been easier"
+              />
               <p className="text-paragraph-gray max-w-sm text-xl my-6">
                 Yet bed any for traveling assistance indulgence unpleasing. Not
                 thoughts all exercise blessing.
               </p>
-              <div className="flex md:flex-row flex-col max-w-sm space-x-10 space-y-5">
+              <div className="flex md:flex-row flex-col max-w-sm space-x-0 space-y-8 md:space-x-10 md:space-y-0">
                 <button className="bg-webo-purple text-white rounded-full md:px-8 md:py-2 py-3">
                   Get Started
                 </button>
-                <span className="flex items-center">
+                <div className="flex items-center">
                   <img
                     src="/images/svg/play.svg"
                     alt="play icon"
                     className="h-12 w-12"
                   />
                   <a className="text-paragraph-gray ml-3">See How It Works</a>
-                </span>
+                </div>
               </div>
-              <div className="flex items-baseline max-w-sm text-paragraph-gray my-10 justify-center md:justify-start">
+              <div className="flex items-baseline max-w-sm text-paragraph-gray my-10 justify-center md:justify-start overflow-hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -195,7 +198,7 @@ export default function Index() {
             <img
               src="/images/main.png"
               alt="main image"
-              className="justify-self-end h-screen max-h-fit hidden md:block overflow-hidden"
+              className="justify-self-end h-screen max-h-fit hidden md:block"
             />
           </div>
         </div>
@@ -220,8 +223,11 @@ export default function Index() {
         <section className="container mx-auto px-5 pt-16 pb-16 xl:pb-0">
           {/* Automated Tracking */}
           <div className="flex xl:flex-row flex-col justify-between">
-            <div className="max-w-lg">
-              <Heading title="Automated portfolio tracking" />
+            <div className="max-w-xl">
+              <Heading
+                title="Automated portfolio tracking"
+                className="w-full"
+              />
               <p className="font-medium text-base my-5">
                 Yet bed any for traveling assistance indulgence unpleasing. Not
                 thoughts all exercise blessing.
@@ -332,8 +338,15 @@ export default function Index() {
             <img
               src="/images/handwithcard.png"
               alt="hand with card"
-              className="max-h-full xl:-mt-10"
+              className=""
             />
+            {/* <section className='h-full relative'>
+              <img
+                src='/images/handwithcard.png'
+                alt='hand with card'
+                className='max-h-full xl:-mt-10'
+              />
+            </section> */}
           </div>
           {/* Save Money */}
         </section>
@@ -351,7 +364,7 @@ export default function Index() {
               plate heard oh ought. His defective nor convinced residence own.
             </p>
             <div className="grid md:grid-cols-3 xl:gap-10 gap-4">
-              <div className="bg-gray-50 rounded-2xl p-5 border-2 border-slate-200">
+              <div className="bg-gray-50 rounded-2xl p-8 pt-12 border-2 border-slate-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
@@ -370,7 +383,7 @@ export default function Index() {
                   plate heard oh ought.
                 </p>
               </div>
-              <div className="bg-gray-50 rounded-2xl p-5 border-2 border-slate-200">
+              <div className="bg-gray-50 rounded-2xl p-8 pt-12 border-2 border-slate-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
@@ -418,68 +431,158 @@ export default function Index() {
             heard oh ought. His defective nor convinced residence own.
           </p>
           {/* Slider */}
-          <div className="grid grid-cols-2 gap-10 py-16">
-            <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
-              <svg
-                className="absolute -top-8 left-5 h-16 w-16"
-                xmlns="http://www.w3.org/2000/svg"
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-              >
-                <circle cx="22" cy="22" r="22" fill="black" />
-                <path
-                  d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
-                  fill="white"
-                />
-              </svg>
-              <figure className="self-center font-semibold">
-                <blockquote className="text-xl">
-                  Wise busy past both park when an ye no. Nay likely her length
-                  sooner thrown sex lively income. The expense windows adapted
-                  sir. Wrong widen.
-                </blockquote>
-                <figcaption className="mt-4 text-base">
-                  - Mike Taylor, Web Designer
-                </figcaption>
-              </figure>
-              <img
-                src="/images/testimonials/Testimonial1.png"
-                alt="picture of a girl"
+          <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <svg
+              className="absolute -top-8 left-5 h-16 w-16"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+            >
+              <circle cx="22" cy="22" r="22" fill="black" />
+              <path
+                d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
+                fill="white"
               />
-            </div>
-            <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
-              <svg
-                className="absolute -top-8 left-5 h-16 w-16"
-                xmlns="http://www.w3.org/2000/svg"
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-              >
-                <circle cx="22" cy="22" r="22" fill="black" />
-                <path
-                  d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
-                  fill="white"
-                />
-              </svg>
-              <figure className="self-center font-semibold">
-                <blockquote className="text-xl">
-                  Wise busy past both park when an ye no. Nay likely her length
-                  sooner thrown sex lively income. The expense windows adapted
-                  sir. Wrong widen.
-                </blockquote>
-                <figcaption className="mt-4 text-base">
-                  - Mike Taylor, Web Designer
-                </figcaption>
-              </figure>
-              <img
-                src="/images/testimonials/Testimonial2.png"
-                alt="picture of a boy"
-              />
-            </div>
+            </svg>
+            <figure className="self-center font-semibold">
+              <blockquote className="text-xl">
+                Wise busy past both park when an ye no. Nay likely her length
+                sooner thrown sex lively income. The expense windows adapted
+                sir. Wrong widen.
+              </blockquote>
+              <figcaption className="mt-4 text-base">
+                - Mike Taylor, Web Designer
+              </figcaption>
+            </figure>
+            <img
+              src="/images/testimonials/Testimonial1.png"
+              alt="picture of a girl"
+            />
           </div>
+
+          <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <svg
+              className="absolute -top-8 left-5 h-16 w-16"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+            >
+              <circle cx="22" cy="22" r="22" fill="black" />
+              <path
+                d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
+                fill="white"
+              />
+            </svg>
+            <figure className="self-center font-semibold">
+              <blockquote className="text-xl">
+                Wise busy past both park when an ye no. Nay likely her length
+                sooner thrown sex lively income. The expense windows adapted
+                sir. Wrong widen.
+              </blockquote>
+              <figcaption className="mt-4 text-base">
+                - Mike Taylor, Web Designer
+              </figcaption>
+            </figure>
+            <img
+              src="/images/testimonials/Testimonial2.png"
+              alt="picture of a boy"
+            />
+          </div>
+          <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <svg
+              className="absolute -top-8 left-5 h-16 w-16"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+            >
+              <circle cx="22" cy="22" r="22" fill="black" />
+              <path
+                d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
+                fill="white"
+              />
+            </svg>
+            <figure className="self-center font-semibold">
+              <blockquote className="text-xl">
+                Wise busy past both park when an ye no. Nay likely her length
+                sooner thrown sex lively income. The expense windows adapted
+                sir. Wrong widen.
+              </blockquote>
+              <figcaption className="mt-4 text-base">
+                - Mike Taylor, Web Designer
+              </figcaption>
+            </figure>
+            <img
+              src="/images/testimonials/Testimonial2.png"
+              alt="picture of a boy"
+            />
+          </div>
+          <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <svg
+              className="absolute -top-8 left-5 h-16 w-16"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+            >
+              <circle cx="22" cy="22" r="22" fill="black" />
+              <path
+                d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
+                fill="white"
+              />
+            </svg>
+            <figure className="self-center font-semibold">
+              <blockquote className="text-xl">
+                Wise busy past both park when an ye no. Nay likely her length
+                sooner thrown sex lively income. The expense windows adapted
+                sir. Wrong widen.
+              </blockquote>
+              <figcaption className="mt-4 text-base">
+                - Mike Taylor, Web Designer
+              </figcaption>
+            </figure>
+            <img
+              src="/images/testimonials/Testimonial2.png"
+              alt="picture of a boy"
+            />
+          </div>
+          <div className="flex border-2 border-gray-300 rounded-md p-5 relative">
+            <svg
+              className="absolute -top-8 left-5 h-16 w-16"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+            >
+              <circle cx="22" cy="22" r="22" fill="black" />
+              <path
+                d="M29.1702 14.2559L28.8533 16.7119C28.0787 16.6591 27.4801 16.7999 27.0575 17.1344C26.635 17.4689 26.3533 17.9355 26.2125 18.534C26.0716 19.1326 26.0452 19.8104 26.1332 20.5675H29.1702V26.9319H23.334V20.0393C23.334 17.9619 23.8269 16.395 24.8128 15.3386C25.8163 14.2647 27.2688 13.9038 29.1702 14.2559ZM21.0364 14.2559L20.7195 16.7119C19.9449 16.6591 19.3463 16.7999 18.9238 17.1344C18.5012 17.4689 18.2195 17.9355 18.0787 18.534C17.9379 19.1326 17.9114 19.8104 17.9995 20.5675H21.0364V26.9319H15.2002V20.0393C15.2002 17.9619 15.6932 16.395 16.6791 15.3386C17.6826 14.2647 19.135 13.9038 21.0364 14.2559Z"
+                fill="white"
+              />
+            </svg>
+            <figure className="self-center font-semibold">
+              <blockquote className="text-xl">
+                Wise busy past both park when an ye no. Nay likely her length
+                sooner thrown sex lively income. The expense windows adapted
+                sir. Wrong widen.
+              </blockquote>
+              <figcaption className="mt-4 text-base">
+                - Mike Taylor, Web Designer
+              </figcaption>
+            </figure>
+            <img
+              src="/images/testimonials/Testimonial2.png"
+              alt="picture of a boy"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-10 py-16"></div>
           {/* Slider */}
         </section>
         {/* Testimonials */}
@@ -522,20 +625,24 @@ export default function Index() {
           <Heading title="Recent Blogs" />
           <article className="grid grid-cols-2 gap-4 place-content-between my-6">
             <section className="justify-self-start place-self-center">
-              <header>
+              <header className="px-6 pt-6">
                 <h5 className="uppercase font-bold tracking-wider">
                   Best Practices
                 </h5>
-                <h2 className="text-bold text-3xl my-3">
+                <h2 className="font-bold text-3xl my-3">
                   In design active temper be uneasy.
                   <br /> Thirty for remove plenty regard.
                 </h2>
               </header>
-              <footer className="mt-10">
-                <span className="flex">
-                  Read More
-                  <img src="/images/svg/arrow-right.svg" alt="arrow right" />
-                </span>
+              <footer className="mt-10 pb-6 px-6">
+                <div className="flex items-center">
+                  <p> Read More</p>
+                  <img
+                    src="/images/svg/arrow-right.svg"
+                    className="ml-2"
+                    alt="arrow right"
+                  />
+                </div>
               </footer>
             </section>
             <img
@@ -544,45 +651,43 @@ export default function Index() {
               className="justify-self-end"
             />
           </article>
-          <div className="grid xl:grid-cols-3">
-            <article>
-              <header>
-                <h5 className="uppercase font-bold tracking-wider">
-                  Best Practices
-                </h5>
-                <h2 className="text-bold text-3xl my-3">
+          <div className="flex gap-7 flex-wrap">
+            <Blog
+              title="Best Practices"
+              summary={
+                <>
                   Partiality on or
                   <br /> continuing particular
                   <br /> principles as.
-                </h2>
-              </header>
-              <img src="/images/blogs/blog2.png" alt="people" />
-            </article>
-            <article>
-              <header>
-                <h5 className="uppercase font-bold tracking-wider">
-                  Best Practices
-                </h5>
-                <h2 className="text-bold text-3xl my-3">
+                </>
+              }
+              image="/images/blogs/blog2.png"
+              alt="people"
+            />
+            <Blog
+              title="Best Practices"
+              summary={
+                <>
                   Village did removed
                   <br /> enjoyed explain
-                </h2>
-              </header>
-              <img src="/images/blogs/blog3.png" alt="people" />
-            </article>
-            <article>
-              <header>
-                <h5 className="uppercase font-bold tracking-wider">
-                  Best Practices
-                </h5>
-                <h2 className="text-bold text-3xl my-3">
+                </>
+              }
+              image="/images/blogs/blog3.png"
+              alt="people"
+            />
+
+            <Blog
+              title="Best Practices"
+              summary={
+                <>
                   Wise busy past both <br />
                   park when an ye no.
                   <br /> Nay likely her length.
-                </h2>
-              </header>
-              <img src="/images/blogs/blog4.png" alt="people" />
-            </article>
+                </>
+              }
+              image="/images/blogs/blog4.png"
+              alt="people"
+            />
           </div>
         </section>
         {/* Blog */}
@@ -600,8 +705,12 @@ export default function Index() {
           />
           <div className="container mx-auto xl:py-20">
             <Heading
-              title="Frequently
-            asked questions"
+              title={
+                <>
+                  Frequently <br />
+                  asked questions
+                </>
+              }
             />
             <div className="grid xl:grid-cols-3 xl:gap-10 gap-y-10 mt-12">
               <div className="col-span-2 grid gap-y-4">
@@ -636,20 +745,20 @@ export default function Index() {
                   summary="Outward clothes promise at gravity do excited?"
                 />
               </div>
-              <div className="flex flex-col items-center border-2 border-gray-300 rounded-md px-5 py-8">
-                <div className="">
+              <div className="grid bg-white items-center border-2 border-gray-300 rounded-md px-5 py-8 max-h-[30rem] max-w-sm">
+                <section className="grid place-content-center">
                   <img src="/images/svg/message.svg" alt="message icon" />
-                </div>
+                </section>
                 <div className="text-center my-6">
-                  <h5 className="font-extrabold text-2xl">
+                  <h5 className="font-extrabold text-2xl mb-4">
                     Do you have more questions?
                   </h5>
-                  <p>
+                  <p className="leading-6">
                     End-to-end payments and financial management in a single
                     solution. Meet the right platform to help realize.
                   </p>
                 </div>
-                <div>
+                <div className="justify-end text-center">
                   <button className="bg-webo-red text-white px-24 py-4 self-end">
                     Shoot a Direct Mail
                   </button>
@@ -688,11 +797,10 @@ export default function Index() {
               className="absolute right-10 bottom-10"
             />
             <Heading
-              className="text-white text-center my-10"
+              className="text-white text-center px-4 max-w-[46rem]"
               title="Discover a better way to
               manage spendings"
             />
-            <h1 className="text-white text-6xl font-extrabold text-center my-10"></h1>
             <button className="bg-webo-red rounded-md py-4 px-8 my-10 text-white">
               Get Started Now
             </button>
