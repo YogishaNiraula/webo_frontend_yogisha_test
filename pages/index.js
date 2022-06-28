@@ -10,7 +10,7 @@ import { SimpleSlider } from "../components/slider.js";
 export default function Index() {
   return (
     <>
-      <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA] xl:h-screen relative overflow-hidden">
+      <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA] xl:h-screen relative overflow-hidden isolate">
         <img
           src="/images/svg/patterns/pattern1.svg"
           alt="pattern"
@@ -136,7 +136,7 @@ export default function Index() {
           </div>
           {/* Navbar */}
 
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 gap-10 relative z-10">
             <div className="my-5 place-self-center">
               <Heading
                 className=""
@@ -280,7 +280,7 @@ export default function Index() {
               <img
                 src="/images/svg/patterns/pattern3.svg"
                 alt="pattern"
-                className="absolute -top-4 right-32 -translate-x-3"
+                className="absolute -top-4 md:right-32 right-8 -translate-x-3"
               />
             </div>
             <div className="max-w-2xl justify-self-end">
@@ -352,13 +352,13 @@ export default function Index() {
           {/* Save Money */}
         </section>
         {/* Features that blows mind */}
-        <section className="bg-webo-blue py-20 relative">
+        <section className="bg-webo-blue py-20 relative isolate">
           <img
             src="/images/svg/patterns/pattern4.svg"
             alt="pattern"
             className="absolute bottom-14 left-0"
           />
-          <div className="container mx-auto px-5">
+          <div className="container mx-auto px-5 relative z-10">
             <Heading title="Features that blows mind" />
             <p className="max-w-prose my-5">
               We so opinion friends me message as delight. Whole front do of
@@ -420,14 +420,14 @@ export default function Index() {
         </section>
         {/* Features that blows mind */}
         {/* Testimonials */}
-        <section className="container mx-auto py-20 px-5 relative">
+        <section className="container mx-auto py-20 px-5 relative isolate">
           <img
             src="/images/svg/patterns/pattern5.svg"
             alt="pattern"
             className="absolute top-24 right-10"
           />
-          <Heading title="Testimonials" />
-          <p className="max-w-prose my-5">
+          <Heading title="Testimonials" className="relative z-10" />
+          <p className="max-w-prose my-5 relative z-10">
             We so opinion friends me message as delight. Whole front do of plate
             heard oh ought. His defective nor convinced residence own.
           </p>
@@ -693,7 +693,7 @@ export default function Index() {
         </section>
         {/* Blog */}
         {/* FAQ */}
-        <section className="py-10 px-5 relative">
+        <section className="py-10 px-5 relative isolate">
           <img
             src="/images/svg/patterns/pattern8.svg"
             alt="pattern"
@@ -704,7 +704,7 @@ export default function Index() {
             alt="pattern"
             className="absolute right-0 top-20"
           />
-          <div className="container mx-auto xl:py-20">
+          <div className="container mx-auto xl:py-20 relative z-10">
             <Heading
               title={
                 <>
@@ -771,7 +771,7 @@ export default function Index() {
         {/* FAQ */}
         {/* Discover */}
         <section className="container mx-auto py-20 px-5">
-          <div className="bg-webo-purple rounded-xl px-16 py-20 flex flex-col items-center relative">
+          <div className="bg-webo-purple rounded-xl px-16 py-20 flex flex-col items-center relative isolate">
             <img
               src="/images/svg/patterns/pattern10.svg"
               alt="pattern"
@@ -798,11 +798,11 @@ export default function Index() {
               className="absolute right-10 bottom-10"
             />
             <Heading
-              className="text-white text-center px-4 max-w-[46rem]"
+              className="text-white text-center px-4 max-w-[46rem] relative z-20"
               title="Discover a better way to
               manage spendings"
             />
-            <button className="bg-webo-red rounded-md py-4 px-8 my-10 text-white">
+            <button className="bg-webo-red rounded-md py-4 px-8 my-10 text-white relative z-20">
               Get Started Now
             </button>
           </div>
