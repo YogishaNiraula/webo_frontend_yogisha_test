@@ -6,8 +6,13 @@ import Stats from "../components/stat.js";
 import Quote from "../components/quote.js";
 import Blog from "../components/blog.js";
 import { SimpleSlider } from "../components/slider.js";
+import { useState } from "react";
 
 export default function Index() {
+  const [openNav, setOpenNav] = useState(false);
+  const handleToggle = () => {
+    setOpenNav((open) => !open);
+  };
   return (
     <>
       <header className="bg-gradient-to-r from-[#C9E7F2] to-[#62BADA] xl:h-screen relative overflow-hidden isolate">
@@ -133,6 +138,77 @@ export default function Index() {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="relative block md:hidden">
+            <div className="flex justify-between items-center py-6 md:justify-start space-x-10">
+              <div className="flex justify-start xl:w-0 xl:flex-1">
+                <a href="#">
+                  <span className="text-2xl font-bold">AR Shakir</span>
+                </a>
+              </div>
+
+              <button
+                onClick={handleToggle}
+                type="button"
+                className=" p-2 inline-flex items-center justify-center "
+                aria-expanded="false"
+              >
+                <span className="sr-only">Open menu</span>
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+            {openNav ? (
+              <div className="bg-white flex-none p-10 rounded-md -mt-8">
+                <nav className="flex justify-between">
+                  <div>
+                    <span className="text-base font-semibold">Product</span>
+                    <div className="relative grid bg-white px-2 ">
+                      <a href="#">Product 1</a>
+                      <a href="#">Product 2</a>
+                      <a href="#">Product 3</a>
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-base font-semibold">Template</span>
+                    <div className="relative grid bg-white px-2 ">
+                      <a href="#">Template 1</a>
+                      <a href="#">Template 2</a>
+                    </div>
+                  </div>
+                </nav>
+                <div className="flex flex-col">
+                  <a href="#">Blog</a>
+                  <a href="#">Pricing</a>
+                </div>
+                <div className="flex justify-between">
+                  <a href="#">Sign in</a>
+                  <div>
+                    <a
+                      href="#"
+                      className="max-w-xs px-4 py-2 text-white bg-webo-purple"
+                    >
+                      Start Free
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
           </div>
           {/* Navbar */}
 
@@ -627,7 +703,7 @@ export default function Index() {
         {/* Blog */}
         <section className="container mx-auto xl:py-20 py-10 px-5">
           <Heading title="Recent Blogs" />
-          <article className="grid grid-cols-2 gap-4 place-content-between my-6">
+          <article className="grid md:grid-cols-2 gap-4 place-content-between my-6">
             <section className="justify-self-start place-self-center">
               <header className="px-6 pt-6">
                 <h5 className="uppercase font-bold tracking-wider">
